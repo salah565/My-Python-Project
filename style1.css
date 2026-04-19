@@ -1,0 +1,112 @@
+/* 1. Global Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    /* خلفية متدرجة فخمة */
+    background: radial-gradient(circle at top left, #e0eafc, #cfdef3);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 2. Navigation (Glass Effect) */
+#haupt-nav {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px); /* تأثير الضباب وراء الزجاج */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+#haupt-nav ul {
+    list-style: none; /* حيد النقط ديال القائمة */
+    display: flex;
+    gap: 20px; /* مسافة بين الروابط */
+}
+#haupt-nav a {
+    color: rgb(29, 113, 203);
+    text-decoration: none; /* حيد السطر اللي تحت الرابط */
+    font-weight: bold;
+
+}    
+/* 3. Main Container Layout */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* تقسيم ذكي للأعمدة */
+    gap: 30px;
+    padding: 50px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* 4. The "Pro" Card Styling */
+.seite-bereich {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    
+    /* ظل مركب كيعطي إحساس بالواقعية */
+    box-shadow: 
+        20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.seite-bereich:hover {
+    transform: scale(1.03) translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+}
+
+/* 5. Inputs & Buttons (Modern Interactivity) */
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    background: #f0f2f5;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(118, 75, 162, 0.3);
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 15px 25px rgba(118, 75, 162, 0.4);
+    filter: brightness(1.1);
+}
+.info-img {
+    width: 150px;       /* العرض ديالها */
+    height: auto;       /* الطول كيتعدل بوحدو باش ما تخسرش التصويرة */
+    display: block;     /* باش تجي بوحدها في سطر */
+    margin: 10px auto;  /* باش تجي وسط الصندوق بالضبط */
+    border-radius: 8px; /* إلا بغيتي الحواف ديالها يجيو دايرين */
+}
