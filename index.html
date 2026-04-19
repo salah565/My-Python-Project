@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Massar Service - Projekt</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav id="haupt-nav">
+        <h2 class="logo">Hauptmenü</h2>
+        <ul>
+            <li><a href="#info-bereich">Über uns</a></li>
+            <li><a href="#admin-bereich">Admin</a></li>
+            <li><a href="#lehrer-bereich">Lehrer</a></li>
+            <li><a href="#schueler-bereich">Schüler</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="info-bereich" class="seite-bereich">
+            <h1>Willkommen</h1>
+            <img src="Massar.png" alt="Massar Logo" class="info-img">
+            <p>Massar Service ist eine wichtige Plattform für das marokkanische Bildungssystem.</p>
+        </section>
+
+        <section id="admin-bereich" class="seite-bereich">
+            <h2>Admin Anmeldung</h2>
+            <form action="#" method="POST">
+                <div class="input-container">
+                    <label for="admin-name">Benutzername:</label>
+                    <input type="text" id="admin-name" name="admin_user" placeholder="Admin  Name" required>
+                </div>
+                <div class="input-container">
+                    <label for="admin-pass">Passwort:</label>
+                    <input type="password" id="admin-pass" name="admin_password" placeholder="Passwort" required>
+                </div>
+                <button type="submit" name="btn_admin">Anmelden</button>
+            </form>
+        </section>
+
+        <section id="lehrer-bereich" class="seite-bereich">
+            <h2>Lehrer Anmeldung</h2>
+            <form action="#" method="POST">
+                <div class="input-container">
+                    <label for="lehrer-nr">Personalnummer:</label>
+                    <input type="text" id="lehrer-nr" name="lehrer_id" placeholder="Personalnummer" required>
+                </div>
+                <div class="input-container">
+                    <label for="lehrer-pass">Passwort:</label>
+                    <input type="password" id="lehrer-pass" name="lehrer_password" placeholder="Passwort" required>
+                </div>
+                <button type="submit" name="btn_lehrer">Anmelden</button>
+            </form>
+        </section>
+
+        <section id="schueler-bereich" class="seite-bereich">
+            <h2>Schüler Anmeldung</h2>
+            <form action="#" method="POST">
+                <div class="input-container">
+                    <label for="schueler-code">Massar-Code:</label>
+                    <input type="text" id="schueler-code" name="schueler_id" placeholder="Massar Code" required>
+                </div>
+                <div class="input-container">
+                    <label for="schueler-pass">Passwort:</label>
+                    <input type="password" id="schueler-pass" name="schueler_password" placeholder="Passwort" required>
+                </div>
+                <button type="submit" name="btn_schueler">Anmelden</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Massar Projekt - Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+/* 1. الإعدادات العامة (Allgemeine Einstellungen) */
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(rgb(52, 222, 171), rgb(242, 118, 73));
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* 2. القائمة (Die Navigation) */
+#haupt-nav {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; /* اللوغو في جهة والمنيو في جهة */
+    align-items: center;
+    position: sticky; /* كتبقى لاصقة الفوق وخا تهبط */
+    top: 0;
+}
+
+#haupt-nav ul {
+    list-style: none; /* حيد النقط ديال القائمة */
+    display: flex;
+    gap: 20px; /* مسافة بين الروابط */
+}
+
+#haupt-nav a {
+    color: white;
+    text-decoration: none; /* حيد السطر اللي تحت الرابط */
+    font-weight: bold;
+}
+
+/* 3. تنسيق الأقسام (Bereiche stylen) */
+.seite-bereich {
+    background: rgb(246, 246, 244);
+    max-width: 600px;
+    margin: 40px auto; /* تجيب كاع الأقسام في وسط الصفحة */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* 4. اpassword (Input Container) */
+.input-container {
+    margin-bottom: 20px; /* كتبعد كل فقرة على الأخرى بانتظام */
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container label {
+    margin-bottom: 5px;
+    color: #fbf7f7;
+    font-weight: bold;
+}
+
+.input-container input {
+    padding: 10px;
+    border: 1px solid #f6f4f4;
+    border-radius: 4px;
+}
+
+/* 5. تمييز قسم خاص باستعمال ID (مثلا المدير) */
+#admin-bereich {
+    border-top: 5px solid #e74c3c; /* خط أحمر كيميز قسم الإدارة */
+}
+
+/* 6. تنسيق الأزرار (Buttons) */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+.info-img {
+    width: 150px;       /* العرض ديالها */
+    height: auto;       /* الطول كيتعدل بوحدو باش ما تخسرش التصويرة */
+    display: block;     /* باش تجي بوحدها في سطر */
+    margin: 10px auto;  /* باش تجي وسط الصندوق بالضبط */
+    border-radius: 8px; /* إلا بغيتي الحواف ديالها يجيو دايرين */
+}
